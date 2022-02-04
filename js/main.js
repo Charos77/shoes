@@ -7,6 +7,25 @@ let headerContentImages = document.querySelector(".header__content-images")
 
 let headerContentDots = document.querySelector(".header__content-dots")
 let headerContentDot = document.querySelectorAll(".header__content-dot")
+let header = document.querySelector(".header")
+let headerContentBtn = document.querySelector('.header__content-btn')
+let  headerbtn = document.querySelector('.header__btn')
+
+
+headerContentBtn.addEventListener('click', function () {
+    header.classList.add("active")   
+    
+})
+header.addEventListener('dblclick', function () {
+    header.classList.remove('active')
+    header.classList.add('add')
+})
+
+
+
+    
+
+
 
 for (let i = 0; i < headerContentDot.length; i++) {
     headerContentDot[i].setAttribute("data-key", i)
@@ -44,7 +63,25 @@ headerNavMenu.addEventListener("click", function () {
 
 // burger menu end
 
+// product start 
+let imgcard = document.querySelectorAll(".card__img")
+let imgcard2 = document.querySelectorAll(".card-img")
+for (let i = 0; i < imgcard.length; i++) {
+    imgcard[i].addEventListener("click", function () {
+        this.classList.add("active")
+        imgcard2[i].classList.add("active")
+        
+    })
+    for (let i = 0; i < imgcard2.length; i++) {
+        imgcard2[i].addEventListener("click", function () {
+            this.classList.remove("active")
+            imgcard[i].classList.remove("active")
+            
+        })
+    }
+}
 
+// product end 
 
 
 // slider start
