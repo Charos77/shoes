@@ -309,7 +309,7 @@ ul {
 .card-img{
     display: none;
 }
-.card-img.active{
+.card-img.active {
     display: inline-block;
 }
 
