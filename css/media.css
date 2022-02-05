@@ -375,6 +375,9 @@
     .Reciew__card::after {
         bottom: 45px;
     }
+    .card__sohag-img {
+        max-width: 70px;
+    }
 }
 @media (max-width: 320px) {
     .title {

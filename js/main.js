@@ -181,10 +181,10 @@ class Slider {
 
         this.item[this.activeSlide].style.transform = `translate${this.direction}(0px)`
         this.item[this.activeSlide].style.transition = this.timeMove + 'ms';
-        // let answer = this.item[this.activeSlide].getAttribute('data-num');
-        // let dots = document.querySelectorAll('.slider__dots-item');
-        // dots.forEach(item=> item.classList.remove('active'))
-        // dots[answer].classList.add('active');
+        let answer = this.item[this.activeSlide].getAttribute('data-num');
+        let dots = document.querySelectorAll('.slider__dots-item');
+        dots.forEach(item=> item.classList.remove('active'))
+        dots[answer].classList.add('active');
     }
     Dots(index) {
         if (this.active && index != this.activeSlide) {

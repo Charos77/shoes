@@ -311,7 +311,6 @@ ul {
 }
 .card-img.active{
     display: inline-block;
-    background: url(../img/header/active-bg2.png) ;
 }
 
 .card__txt{
