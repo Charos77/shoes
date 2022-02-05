@@ -71,14 +71,9 @@ ul {
     overflow: hidden;
 }
 .header.active {
-    background: url(../img/header/active-bg2.png);
+    background:  url(../img/header/active-bg3.png);
     background-size: cover;
 }
-.header.add {
-    background: url(../img/header/active-bg3.png);
-    background-size: cover;
-}
-
 
 .header__nav {
     position: relative;

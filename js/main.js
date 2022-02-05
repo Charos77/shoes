@@ -16,9 +16,9 @@ headerContentBtn.addEventListener('click', function () {
     header.classList.add("active")   
     
 })
-header.addEventListener('dblclick', function () {
+
+headerContentBtn.addEventListener('dblclick', function () {
     header.classList.remove('active')
-    header.classList.add('add')
 })
 
 
