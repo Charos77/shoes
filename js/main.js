@@ -9,7 +9,7 @@ let headerContentDots = document.querySelector(".header__content-dots")
 let headerContentDot = document.querySelectorAll(".header__content-dot")
 let header = document.querySelector(".header")
 let headerContentBtn = document.querySelector('.header__content-btn')
-let  headerbtn = document.querySelector('.header__btn')
+let  headerbtn = document.querySelector('.header__btn-content')
 
 
 headerContentBtn.addEventListener('click', function () {
@@ -55,10 +55,13 @@ function showInfo(e) {
 
 let headerNavMenu = document.querySelector(".header__nav-menu")
 let headerList = document.querySelector(".header__list")
+let body = document.querySelector('body')
 
 headerNavMenu.addEventListener("click", function () {
     this.classList.toggle("active")
     headerList.classList.toggle("active")
+    body.classList.toggle('active')
+    
 })
 
 // burger menu end

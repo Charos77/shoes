@@ -7,6 +7,9 @@
     --ternary-color: #051101;
 }
 
+body.active{
+    overflow: hidden;
+}
 
 .title {
     font-weight: 700;
